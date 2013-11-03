@@ -3,11 +3,3 @@ dist
 .tmp
 .sass-cache
 app/bower_components
-
-.bowerrc
-
-.editorconfig
-
-.gitattributes
-
-.jshintrc

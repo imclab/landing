@@ -1,0 +1,29 @@
+.form_wrap {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.shit_form {
+  height: auto;
+  width: 97%;
+
+  input,
+  textarea {
+    border: 1px solid #000;
+    width: 80%;
+    margin: 6px;
+
+    &:active {
+      border: 1px solid #a34e29;
+    }
+    
+    &.inline {
+      width: 225px;
+      display: inline-block;
+    }
+  }
+
+  input {
+    height: 40px;
+  }
+}

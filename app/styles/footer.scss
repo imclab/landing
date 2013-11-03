@@ -1,0 +1,40 @@
+footer {
+  background: #000;
+  color: #fff;
+  
+  a {
+    color: #fff;
+  }
+
+  .inner-footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 5px;
+
+    ul:first-child {
+      float: left;
+      display: inline-block;
+
+      li {
+        border-right: 1px solid #fff;
+      }
+      li:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .social {
+    float: right;
+
+    li {
+      a {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #FFF;
+        border-radius: 50%;
+      }
+    }
+  }
+}

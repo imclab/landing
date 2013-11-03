@@ -2,6 +2,9 @@ $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import './nav.scss';
+@import './form.scss';
+@import './footer.scss';
 
 .hero-unit {
   margin: 0 auto 0 auto;
@@ -16,6 +19,11 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
     line-height: 70px;
     text-align: center;
   }
+}
+
+.light {
+  font-size: 14px;
+  font-weiht: lighter;
 }
 
 .SS_btn {
@@ -40,32 +48,6 @@ header {
   height: 500px;
 }
 
-.brand {
-  background: url('../images/SS_logo_small_white.png') no-repeat;
-}
-
-.container .navbar .container {
-  width: auto;
-}
-
-.navbar {
-  .navbar-inner{
-    height: 90px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.35);
-    background-image: none;
-  }
-
-  .brand {
-    width: 200px;
-    height: 50px;
-  }
-
-  .nav {
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-}
 
 section > article {
   width: 500px;
@@ -73,6 +55,10 @@ section > article {
   text-align: center;
   padding: 50px 15px;
   margin: 49px auto;
+
+  h4 {
+    margin-bottom: 50px;
+  }
 }
 
 .about {
@@ -103,42 +89,39 @@ section > article {
 .rules {
   background: #a34e29;
   color: white;
+  text-align: center;
+  
+  a {
+    display: inline-block;
+    width: 100%;
+    color: #70351c;
+  }
+  
+  ul {
+    width: 40%;
+    float: right;
+    text-align: left;
+  }
+  
+  ul.one {
+    float: left;
+  }
 }
 
 .terms {
   background: #1a1a1a;
   color: #fff;
-}
+  line-height: 23px;
+  > article {
+    width: 500px;
+    text-align: center;
+    padding: 0px 15px;
+    margin: 45px auto;
+    border: none;
+    font-weight: lighter;
 
-.form_wrap {
-  width: 600px;
-  margin: 30px auto;
-}
-
-.shit_form {
-  // .clearfix();
-  input,
-  textarea {
-    border: 1px solid #000;
-    width: 80%;
-    margin: 6px;
-
-    &:active {
-      border: 1px solid #a34e29;
-    }
-    
-    &.inline {
-      width: 225px;
-      display: inline-block;
+    h4 {
+       font-size: 14px;
     }
   }
-
-  input {
-    height: 40px;
-  }
-}
-
-footer {
-  background: #000;
-  color: #fff;
 }
