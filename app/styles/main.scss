@@ -4,17 +4,8 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
-
-@mixin raleway() {
-  font-family: 'Raleway', sans-serif;
-}
-
-@mixin light() {
-  font-size: 14px;
-  font-weight: lighter;
-}
-
 @import 'sass-bootstrap/lib/bootstrap';
+@import './mixins.scss';
 @import './colors.scss';
 @import './nav.scss';
 @import './form.scss';

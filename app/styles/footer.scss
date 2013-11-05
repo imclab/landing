@@ -1,3 +1,6 @@
+@import './mixins.scss'
+@import './colors.scss'
+
 footer {
   @include raleway();
   background: #000;
