@@ -4,7 +4,8 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
-@import 'sass-bootstrap/lib/bootstrap';
+@import 'sass-bootstrap/lib/bootstrap.scss';
+@import 'sass-bootstrap/lib/responsive.scss';
 @import './mixins.scss';
 @import './colors.scss';
 @import './nav.scss';
