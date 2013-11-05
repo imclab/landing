@@ -12,6 +12,7 @@
     border: 1px solid #000;
     width: 80%;
     margin: 6px;
+    border-radius: 0;
 
     &:active {
       border: 1px solid #a34e29;
@@ -28,6 +29,9 @@
   }
 
   .SS_btn {
-    
+    width: 82%;
+    color: $burnt;
+    font-size: 16px;
+    font-weight: bolder;
   }
 }

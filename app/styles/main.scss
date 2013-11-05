@@ -1,14 +1,33 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
+
+
+@mixin raleway() {
+  font-family: 'Raleway', sans-serif;
+}
+
+@mixin light() {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
 @import 'sass-bootstrap/lib/bootstrap';
+@import './colors.scss';
 @import './nav.scss';
 @import './form.scss';
 @import './footer.scss';
 
+body {
+  font-family: 'PT Serif', serif;
+}
+
 p {
   line-height: 27.5px;
   font-size: 18px;
+  font-weight: lighter;
 }
 
 .hero-unit {
@@ -18,12 +37,11 @@ p {
   position: relative;
 
   h2 {
+    line-height: 110%;
     margin: 85px auto;
-    color: #FFF;
+    color: $white;
     font-size: 70px;
-    line-height: 70px;
     text-align: center;
-  
   }
 
   .SS_btn {
@@ -33,17 +51,19 @@ p {
   }
 }
 
-.light {
-  font-size: 14px;
-  font-weiht: lighter;
-}
-
 .SS_btn {
-  color: #FFF;
+  @include raleway();
+  color: $white;
   padding: 15px;
   border: 2px solid;
   border-radius: 0;
   margin: 0 auto;
+  background: transparent;
+}
+
+.section-title {
+  @include raleway();
+  margin-bottom: 50px;
 }
 
 body > .container {
@@ -60,7 +80,7 @@ header {
 
 section > article {
   width: 500px;
-  border-bottom: 10px solid #A34E29;
+  border-bottom: 10px solid $burnt;
   text-align: center;
   padding: 50px 15px;
   margin: 49px auto;
@@ -71,8 +91,8 @@ section > article {
 }
 
 .about {
-  background: #1a1a1a;
-  color: #fff;
+  background: $black;
+  color: $white;
 
   article {
     height: 160px;
@@ -85,7 +105,7 @@ section > article {
 
   article {
     height: 160px;
-    background: #FFF;
+    background: $white;
   }
 }
 
@@ -94,14 +114,14 @@ section > article {
 }
 
 .rules {
-  background: #a34e29;
-  color: white;
+  background: $burnt;
+  color: $white;
   text-align: center;
   
   a {
     display: inline-block;
     width: 100%;
-    color: #70351c;
+    color: $burnt;
   }
   
   ul {
@@ -116,8 +136,8 @@ section > article {
 }
 
 .terms {
-  background: #1a1a1a;
-  color: #fff;
+  background: $black;
+  color: $white;
   line-height: 23px;
   > article {
     width: 500px;
@@ -127,7 +147,10 @@ section > article {
     border: none;
     font-weight: lighter;
 
-    h4 {
+    p {
+      @include light();
+    }
+    .section-title {
        font-size: 14px;
     }
   }
