@@ -6,6 +6,11 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import './form.scss';
 @import './footer.scss';
 
+p {
+  line-height: 27.5px;
+  font-size: 18px;
+}
+
 .hero-unit {
   margin: 0 auto 0 auto;
   width: 630px;
@@ -18,6 +23,13 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
     font-size: 70px;
     line-height: 70px;
     text-align: center;
+  
+  }
+
+  .SS_btn {
+    position: absolute;
+    left: 35%;
+    top: 80%;
   }
 }
 
@@ -32,9 +44,6 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
   border: 2px solid;
   border-radius: 0;
   margin: 0 auto;
-  position: absolute;
-  left: 35%;
-  top: 80%;
 }
 
 body > .container {
@@ -83,8 +92,6 @@ section > article {
 .rules {
   
 }
-
-.submission {}
 
 .rules {
   background: #a34e29;
