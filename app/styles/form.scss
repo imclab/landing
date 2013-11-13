@@ -8,13 +8,13 @@
 
 .shit_form {
   height: auto;
-  width: 97%;
+  width: 100%;
 
   input,
   textarea {
     border: 1px solid #000;
     width: 80%;
-    margin: 6px;
+    margin: 10px 6px;
     border-radius: 0;
 
     &:active {
@@ -22,9 +22,13 @@
     }
     
     &.inline {
-      width: 225px;
+      width: 38%;
       display: inline-block;
     }
+  }
+
+  textarea {
+    min-height: 280px;
   }
 
   input {
@@ -36,5 +40,6 @@
     color: $burnt;
     font-size: 16px;
     font-weight: bolder;
+    margin: 5px auto;
   }
 }

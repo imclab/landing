@@ -9,8 +9,15 @@
   float: right;
 }
 
-.container .navbar .container {
-  width: auto;
+.container {
+
+  .navbar .container {
+    width: auto;
+  }
+
+  .nav-collapse {
+    margin-right: 60px;
+  }
 }
 
 .navbar {
@@ -26,6 +33,7 @@
     width: 120px;
     height: 50px;
     margin-top: 12px;
+    margin-left: 120px;
   }
 
   .nav {

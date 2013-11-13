@@ -21,24 +21,29 @@ p {
   font-weight: lighter;
 }
 
-.hero-unit {
-  margin: 0 auto 0 auto;
-  width: 630px;
+.hero {
+  display: block;
+  background: url('../images/hero_bg.png') no-repeat;
+  background-size: cover;
+  height: 950px;
+}
+
+.why {
   background: transparent;
   position: relative;
+  text-align: center;
 
   h2 {
     line-height: 110%;
-    margin: 85px auto;
+    margin: 55px auto;
     color: $white;
     font-size: 70px;
     text-align: center;
   }
 
   .SS_btn {
-    position: absolute;
-    left: 35%;
-    top: 80%;
+    margin: 50px;
+    display: inline-block;
   }
 }
 
@@ -54,7 +59,6 @@ p {
 
 .section-title {
   @include raleway();
-  margin-bottom: 50px;
 }
 
 body > .container {
@@ -65,9 +69,8 @@ header {
   display: block;
   background: url('../images/hero_bg.png') no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 950px;
 }
-
 
 section > article {
   width: 500px;
@@ -77,7 +80,8 @@ section > article {
   margin: 49px auto;
 
   h4 {
-    margin-bottom: 50px;
+    font-size: 16px;
+    margin-bottom: 25px;
   }
 }
 
@@ -86,6 +90,7 @@ section > article {
   color: $white;
 
   article {
+    margin: 1px auto 50px;
     height: 160px;
   }
 }
@@ -95,35 +100,54 @@ section > article {
   background-size: cover;
 
   article {
-    height: 160px;
+    max-width: 500px;
+    min-height: 160px;
     background: $white;
   }
-}
-
-.rules {
-  
 }
 
 .rules {
   background: $burnt;
   color: $white;
   text-align: center;
-  
+  padding: 75px 0;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 16px;
+  border-bottom: 10px solid $black;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+
   a {
+    font-size: 12px;
     display: inline-block;
     width: 100%;
-    color: $burnt;
+    color: #1A1A1A;
+    margin-bottom: 30px;
+
   }
   
   ul {
     width: 40%;
     float: right;
     text-align: left;
+
+    li {
+      padding: 10px;
+    }
   }
   
   ul.one {
     float: left;
   }
+}
+
+.submission {
+    h4 {
+      margin-bottom: 45px;
+    }
 }
 
 .terms {
@@ -138,11 +162,101 @@ section > article {
     border: none;
     font-weight: lighter;
 
+    .section-title {
+      margin-bottom: 35px;
+    }
+
     p {
       @include light();
+      font-size: 12px;
     }
     .section-title {
        font-size: 14px;
+    }
+  }
+}
+
+
+
+/* responsive youtube embed */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* media queries yuck */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .navbar .brand {
+    margin-left: 10px;
+  }
+
+  .hero-unit {
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .hero-unit {
+    h2 {
+      font-size: 30px;
     }
   }
 }
