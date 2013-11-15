@@ -46,7 +46,7 @@
       </div><!-- /.navbar -->
 
 
-       <div class="why span9 offset4">
+       <div class="why span10 offset4">
          <h2>Why is She Shreds important to you?</h2>
          <div class="video-container">
             <iframe width="640" height="390" src="//www.youtube.com/embed/viUrlpUrlUU" frameborder="0" allowfullscreen></iframe>
@@ -144,7 +144,16 @@ which you can <a href="">download here</a>.</p>
         </script>
 
         <!-- build:js scripts/main.js -->
-        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+
+        <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/sass-bootstrap/js/bootstrap-collapse.js"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('.nav-collapse').collapse();
+          });
+        </script>
+        <!-- <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script> -->
         <!-- endbuild -->
 </body>
 </html>
